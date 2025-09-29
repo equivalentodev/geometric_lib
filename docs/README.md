@@ -55,7 +55,7 @@ def perimeter(a):
 |       Прямоугольник          |      S = ab       |
 |           Квадрат            |      S = a²       |
 |        Треугольник           |   S = (a * h) / 2 |
-## Периметр
+---
 |    геометрическая фигура     |     формулы       |
 |:----------------------------:|:-----------------:|
 |            Круг              |      P = 2πR      |
@@ -65,3 +65,13 @@ def perimeter(a):
 <p style="color: gray; font-size: 90%;">
 <b>Примечание:</b> более подробно расписано в папке docs.
 </p>
+
+## <span style="color: #0000FF;">История коммитов:</span>
+
+```* commit 1095425d722429c28820c5523715105fe5037870
+| Author: Mikhail <equivalentoexe@gmail.com>
+| Date:   Mon Sep 29 22:13:04 2025 +0300
+| 
+|     Create new branch and add descriptions for functions in files.
+| 
+```
