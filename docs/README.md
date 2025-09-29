@@ -2,7 +2,7 @@
 
 ## <span style="color: #ADD8E6;">geometric_lib - python библиотека с базовыми функциями для вычисления площадей и периметров таких фигур, как: круг и квадрат.</span>
 
-![geometry](https://www.litres.ru/book/valentin-butuzov-8681795/geometriya-7-9-klass-68293610/)
+![geometry](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYG0RgfUb_2QjwlBOmik9nERItKh5VLKRMpw&s)
 ---
 
 ## <span style="color: #0000FF;">Краткое описание библиотеки</span>
