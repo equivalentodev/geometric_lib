@@ -10,7 +10,10 @@ def area(a):
         area (int): площадь квадрата с стороной a
     '''
 
+    if a <= 0:
+        raise ValueError("Сторона квадрата должна быть положительной")
     return a * a
+
 
 
 def perimeter(a):
@@ -24,4 +27,6 @@ def perimeter(a):
         perimeter (int): периметр квадрата с стороной a
     '''
 
+    if a <= 0:
+        raise ValueError("Сторона квадрата должна быть положительной")
     return 4 * a

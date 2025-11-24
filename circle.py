@@ -12,6 +12,8 @@ def area(r):
         area (float): площадь окружности с радиусом r
     '''
 
+    if r <= 0:
+        raise ValueError("Радиус должен быть больше нуля")
     return math.pi * r * r
 
 
@@ -26,5 +28,7 @@ def perimeter(r):
         perimeter (float): длина окружности с радиусом r
     '''
 
+    if r <= 0:
+        raise ValueError("Радиус должен быть больше нуля")
     return 2 * math.pi * r
 
