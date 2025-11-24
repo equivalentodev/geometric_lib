@@ -1,10 +1,73 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+# <span style="color: #98FF98;">geometric_lib</span>
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+## <span style="color: #ADD8E6;">geometric_lib - python библиотека с базовыми функциями для вычисления площадей и периметров таких фигур, как: круг и квадрат.</span>
+
+![geometry](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYG0RgfUb_2QjwlBOmik9nERItKh5VLKRMpw&s)
+---
+
+## <span style="color: #0000FF;">Краткое описание библиотеки</span>
+### Использование:
+
+- Чтобы использовать библиотеку, клонируйте данный репозиторий в папку с проектом через команду:
+  ```bash
+  git clone <ссылка>
+  ```
+
+- После импортируйте библиотеку в .py файл следующей командой и приступайте к написанию кода:
+    ```python
+    from geometric_lib import *
+    ```
+
+<p style="color: gray; font-size: 90%;">
+<b>Примечание:</b> более подробно расписано в MATHFUNCTIONS.md
+</p>
+
+## <span style="color: #0000FF;">Коды функций:</span>
+### Круг
+```python
+import math
+def area(r):
+    return math.pi * r * r
+
+
+def perimeter(r):
+    return 2 * math.pi * r
+```
+
+### Квадрат
+```python
+def area(a):
+    return a * a
+
+
+def perimeter(a):
+    return 4 * a
+```
+
+<p style="color: gray; font-size: 90%;">
+<b>Примечание:</b> более подробно расписано в .py файлах и папке docs.
+</p>
+
+## <span style="color: #0000FF;">Формулы:</span>
+|    геометрическая фигура     |      формулы      |
+|:----------------------------:|:-----------------:|
+|            Круг              |      S = πR²      |
+|           Квадрат            |      S = a²       |
+---
+|    геометрическая фигура     |     формулы       |
+|:----------------------------:|:-----------------:|
+|            Круг              |      P = 2πR      |
+|           Квадрат            |      P = 4a       |
+<p style="color: gray; font-size: 90%;">
+<b>Примечание:</b> более подробно расписано в папке docs.
+</p>
+
+## <span style="color: #0000FF;">История коммитов:</span>
+
+```* commit 1095425d722429c28820c5523715105fe5037870
+| Author: Mikhail <equivalentoexe@gmail.com>
+| Date:   Mon Sep 29 22:13:04 2025 +0300
+| 
+|     Create new branch and add descriptions for functions in files.
+| 
+```
