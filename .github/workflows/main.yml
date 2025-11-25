@@ -1,6 +1,5 @@
-name: Python CI
+name: Run Unit Tests
 
-# Триггер workflow
 on:
   push:
     branches: [ main ]
@@ -9,32 +8,30 @@ on:
 
 jobs:
   test:
-    # Запуск на нескольких ОС
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
+        python-version: ['3.13']
 
     runs-on: ${{ matrix.os }}
 
     steps:
-      # Клонируем репозиторий
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      # Установка Python
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: ${{ matrix.python-version }}
 
-      # Установка зависимостей
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install coverage
-
-      # Запуск всех unit-тестов с coverage
       - name: Run unit tests
-        run: |
-          coverage run -m unittest discover -s tests
-          coverage report -m
+        run: python3 -m unittest tests.test_square
+
+      - name: Run unit tests
+        run: python3 -m unittest tests.test_triangle
+
+      - name: Run unit tests
+        run: python3 -m unittest tests.test_rectangle
+
+      - name: Run unit tests
+        run: python3 -m unittest tests.test_circle
